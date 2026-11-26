@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Updated 09302026 with TrustSite tag-->
+   <script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6G3S1ML7EF"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn what to expect during QuickBooks Online setup with Medha Accounting & Analytics, from discovery and account configuration to training and handoff.">
+  <title>QuickBooks Setup | Medha Accounting &amp; Analytics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #172d3b;
+      --navy-2: #244354;
+      --green: #4d806e;
+      --green-dark: #376653;
+      --sage: #e8f0eb;
+      --cream: #f7f7f2;
+      --paper: #ffffff;
+      --ink: #25343c;
+      --muted: #66757b;
+      --line: #dce5df;
+      --gold: #c6a56b;
+      --shadow: 0 18px 50px rgba(23,45,59,.08);
+      --radius: 18px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; color: var(--ink); background: var(--cream);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65; -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    .wrap { width: min(1120px, calc(100% - 40px)); margin-inline: auto; }
+    .topline { background: var(--navy); color: #edf4f0; font-size: .83rem; }
+    .topline-inner { min-height: 38px; display:flex; justify-content:space-between; align-items:center; gap:16px; }
+    .topline a { text-decoration:none; color:#edf4f0; }
+    header { background: rgba(247,247,242,.96); border-bottom: 1px solid rgba(220,229,223,.8); }
+    .nav { min-height: 82px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+    .brand { text-decoration:none; display:flex; flex-direction:column; line-height:1.25; }
+    .brand strong { color:var(--navy); letter-spacing:-.035em; font-size:1.08rem; }
+    .brand span { color:var(--muted); font-size:.73rem; letter-spacing:.035em; }
+    .navlinks { display:flex; align-items:center; gap:24px; font-size:.9rem; }
+    .navlinks a { text-decoration:none; color:var(--navy); }
+    .navlinks a:hover { color:var(--green-dark); }
+    .btn { display:inline-flex; align-items:center; justify-content:center; gap:9px; border-radius:999px; padding:12px 20px; font-weight:650; font-size:.92rem; text-decoration:none; border:1px solid transparent; transition:transform .18s, background .18s; }
+    .btn:hover { transform:translateY(-1px); }
+    .btn-primary { background:var(--green); color:white; }
+    .btn-primary:hover { background:var(--green-dark); }
+    .btn-outline { border-color:#b9c9c0; color:var(--navy); background:transparent; }
+    .hero { position:relative; overflow:hidden; padding:76px 0 70px; background:linear-gradient(120deg, #f7f7f2 0%, #edf3ee 68%, #e4eee7 100%); }
+    .hero:after { content:""; position:absolute; width:460px; height:460px; border:1px solid rgba(77,128,110,.15); border-radius:50%; right:-130px; top:-185px; box-shadow:0 0 0 42px rgba(77,128,110,.035), 0 0 0 88px rgba(77,128,110,.025); }
+    .hero-grid { display:grid; grid-template-columns:1.15fr .85fr; gap:58px; align-items:center; position:relative; z-index:1; }
+    .eyebrow { display:inline-flex; align-items:center; gap:9px; color:var(--green-dark); text-transform:uppercase; letter-spacing:.13em; font-size:.74rem; font-weight:750; }
+    .eyebrow:before { content:""; display:block; width:24px; height:2px; background:var(--gold); }
+    h1,h2,h3,p { margin-top:0; }
+    h1 { color:var(--navy); font-size:clamp(2.55rem, 5vw, 4.25rem); letter-spacing:-.055em; line-height:1.08; margin:18px 0 22px; max-width:700px; }
+    h1 em { font-style:normal; color:var(--green); }
+    .hero p { color:#53636a; font-size:1.08rem; max-width:590px; }
+    .hero-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:28px; }
+    .trustline { display:flex; flex-wrap:wrap; gap:18px; margin-top:27px; color:var(--muted); font-size:.82rem; }
+    .trustline span:before { content:"✓"; color:var(--green); font-weight:800; margin-right:7px; }
+    .preview { background:var(--paper); border:1px solid #e1e8e3; border-radius:22px; box-shadow:var(--shadow); padding:25px; transform:rotate(1deg); }
+    .preview-top { display:flex; justify-content:space-between; align-items:center; padding-bottom:18px; border-bottom:1px solid var(--line); }
+    .preview-top strong { color:var(--navy); font-size:1rem; }
+    .status { background:var(--sage); color:var(--green-dark); font-size:.72rem; padding:5px 10px; border-radius:99px; font-weight:700; }
+    .preview-sub { color:var(--muted); font-size:.82rem; margin:17px 0; }
+    .mini-step { display:grid; grid-template-columns:36px 1fr auto; align-items:center; gap:12px; padding:13px 0; border-bottom:1px solid #edf1ed; }
+    .mini-step:last-child { border-bottom:0; }
+    .num { width:34px; height:34px; border-radius:11px; display:grid; place-items:center; color:var(--green-dark); background:var(--sage); font-size:.82rem; font-weight:800; }
+    .mini-step b { display:block; color:var(--navy); font-size:.88rem; }
+    .mini-step small { color:var(--muted); font-size:.75rem; }
+    .check { color:var(--green); font-weight:800; }
+    .section { padding:78px 0; }
+    .section-white { background:var(--paper); }
+    .section-head { max-width:700px; margin-bottom:36px; }
+    .section-head h2 { font-size:clamp(1.9rem, 3.4vw, 2.7rem); line-height:1.16; letter-spacing:-.04em; color:var(--navy); margin:13px 0 14px; }
+    .section-head p { color:var(--muted); margin-bottom:0; font-size:1.02rem; }
+    .process { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
+    .process-card { background:white; border:1px solid var(--line); border-radius:var(--radius); padding:26px; display:flex; gap:18px; }
+    .process-card .num { flex:0 0 42px; width:42px; height:42px; border-radius:13px; font-size:.9rem; }
+    .process-card h3 { color:var(--navy); font-size:1.12rem; margin:2px 0 7px; }
+    .process-card p { color:var(--muted); font-size:.93rem; margin-bottom:12px; }
+    .process-card ul { padding-left:18px; margin:0; color:#4f6066; font-size:.88rem; }
+    .process-card li { margin:4px 0; }
+    .note { display:flex; align-items:flex-start; gap:13px; background:var(--sage); border-radius:14px; padding:17px 20px; margin-top:22px; color:#3d5e50; font-size:.9rem; }
+    .note strong { color:var(--navy); }
+    .two-col { display:grid; grid-template-columns:1fr 1fr; gap:54px; align-items:start; }
+    .list-check { list-style:none; padding:0; margin:24px 0 0; }
+    .list-check li { display:flex; gap:12px; margin:13px 0; color:#4f6066; }
+    .list-check li:before { content:"✓"; flex:0 0 23px; width:23px; height:23px; border-radius:50%; display:grid; place-items:center; background:var(--sage); color:var(--green-dark); font-size:.78rem; font-weight:800; margin-top:2px; }
+    .panel { background:var(--cream); border:1px solid var(--line); border-radius:var(--radius); padding:28px; }
+    .panel h3 { color:var(--navy); margin-bottom:7px; }
+    .panel > p { color:var(--muted); font-size:.91rem; }
+    .doc-row { display:flex; gap:12px; align-items:flex-start; padding:13px 0; border-top:1px solid var(--line); }
+    .doc-icon { width:34px; height:34px; display:grid; place-items:center; border-radius:10px; background:white; color:var(--green-dark); flex:0 0 34px; font-weight:800; }
+    .doc-row b { display:block; font-size:.9rem; color:var(--navy); }
+    .doc-row small { display:block; color:var(--muted); font-size:.81rem; line-height:1.45; }
+    .timeline { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:30px; }
+    .time-card { border-top:3px solid var(--green); background:var(--cream); padding:20px; border-radius:0 0 14px 14px; }
+    .time-card strong { display:block; color:var(--navy); margin-bottom:7px; }
+    .time-card p { color:var(--muted); font-size:.88rem; margin:0; }
+    .faq { max-width:850px; }
+    details { border-bottom:1px solid var(--line); padding:18px 0; }
+    summary { cursor:pointer; list-style:none; color:var(--navy); font-weight:700; display:flex; justify-content:space-between; gap:20px; }
+    summary::-webkit-details-marker { display:none; }
+    summary:after { content:"+"; color:var(--green); font-size:1.3rem; line-height:1; }
+    details[open] summary:after { content:"−"; }
+    details p { color:var(--muted); margin:12px 30px 0 0; font-size:.94rem; }
+    .cta { background:var(--navy); color:white; padding:56px 0; }
+    .cta-inner { display:flex; justify-content:space-between; align-items:center; gap:30px; }
+    .cta h2 { color:white; font-size:clamp(1.8rem,3vw,2.5rem); letter-spacing:-.04em; margin:10px 0; }
+    .cta p { color:#d4e0dc; margin:0; max-width:650px; }
+    .cta .eyebrow { color:#b8d5c6; }
+    .cta .btn { flex:0 0 auto; background:#e8f0eb; color:var(--navy); }
+    footer { padding:26px 0; background:#10232e; color:#c5d2d0; font-size:.82rem; }
+    .footer-inner { display:flex; justify-content:space-between; align-items:center; gap:16px; }
+    footer a { color:#e8f0eb; text-decoration:none; }
+    @media (max-width: 800px) {
+      .hero-grid,.two-col { grid-template-columns:1fr; gap:34px; }
+      .hero { padding:56px 0; }
+      .preview { max-width:560px; transform:none; }
+      .process { grid-template-columns:1fr; }
+      .timeline { grid-template-columns:1fr; }
+      .cta-inner { align-items:flex-start; flex-direction:column; }
+      .navlinks a:not(.btn) { display:none; }
+    }
+    @media (max-width: 480px) {
+      .wrap { width:min(100% - 28px, 1120px); }
+      .topline-inner { font-size:.72rem; }
+      .nav { min-height:70px; }
+      .navlinks { gap:0; }
+      .navlinks .btn { padding:10px 13px; font-size:.82rem; }
+      .hero-actions .btn { width:100%; }
+      .process-card { padding:20px; }
+      .footer-inner { align-items:flex-start; flex-direction:column; }
+    }
+
+    /* Medha site-wide visual system: matched to the main website */
+    :root {
+      --navy: #102A56;
+      --navy-2: #173B73;
+      --blue: #2E5DB8;
+      --green: #2E5DB8;
+      --green-dark: #173B73;
+      --sage: #EEF3F9;
+      --cream: #F7F9FC;
+      --paper: #FFFFFF;
+      --ink: #172235;
+      --muted: #617087;
+      --line: #DCE4EF;
+      --gold: #D99A17;
+      --gold-soft: #F4C45A;
+      --shadow: 0 22px 55px rgba(16,42,86,.12);
+      --radius: 9px;
+    }
+    body {
+      color: var(--ink);
+      background: var(--cream);
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      line-height: 1.6;
+    }
+    h1, h2, h3, h4 {
+      color: var(--navy);
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-weight: 400;
+      line-height: 1.08;
+    }
+    p { color: var(--muted); }
+    .topline { background: var(--navy); color: #DCE5F3; }
+    .topline a { color: #DCE5F3; }
+    header {
+      background: rgba(247,249,252,.94);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(14px);
+    }
+    .brand strong { font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; letter-spacing: 0; }
+    .brand span, .eyebrow, .btn, .num, .status, .trustline,
+    .topline, .doc-icon, .contact-label {
+      font-family: 'IBM Plex Mono', monospace;
+    }
+    .brand span { letter-spacing: .12em; font-size: .65rem; }
+    .btn {
+      border-radius: 5px;
+      font-size: 12.5px;
+      font-weight: 600;
+      letter-spacing: .025em;
+      padding: 12px 21px;
+      min-height: 48px;
+    }
+    .btn-primary { background: var(--navy); color: #fff; box-shadow: 0 9px 22px rgba(16,42,86,.16); }
+    .btn-primary:hover { background: var(--blue); }
+    .btn-outline { border-color: #B8C6D9; color: var(--navy); background: #fff; }
+    .btn-outline:hover { border-color: var(--navy); background: var(--sage); }
+    .hero {
+      background: radial-gradient(circle at 78% 25%, rgba(46,93,184,.08), transparent 28%),
+                  linear-gradient(180deg, #F7F9FC 0%, #F2F6FB 100%);
+    }
+    .hero:after { border-color: rgba(217,154,23,.28); box-shadow: 0 0 0 42px rgba(217,154,23,.035), 0 0 0 88px rgba(217,154,23,.02); }
+    .eyebrow {
+      color: var(--gold);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .14em;
+    }
+    .eyebrow:before { height: 1px; background: currentColor; }
+    h1 { letter-spacing: -.025em; }
+    h1 em { color: var(--blue); }
+    .hero p { color: var(--muted); }
+    .trustline { font-size: 10.5px; letter-spacing: .02em; }
+    .trustline span:before { color: var(--gold); }
+    .preview { border-color: var(--line); border-radius: 13px; box-shadow: var(--shadow); }
+    .status { background: var(--sage); color: var(--navy-2); border-radius: 4px; }
+    .num { color: var(--blue); background: var(--sage); border-radius: 7px; }
+    .check { color: var(--gold); }
+    .section-head h2 { letter-spacing: -.015em; }
+    .process-card { border-radius: 9px; }
+    .process-card .num { border-radius: 7px; }
+    .note { background: var(--sage); border-radius: 7px; color: #53647A; }
+    .note strong { color: var(--navy); }
+    .panel { background: var(--cream); border-radius: 9px; }
+    .doc-icon { border-radius: 7px; color: var(--blue); }
+    .time-card { border-top-color: var(--gold); background: var(--cream); border-radius: 0 0 7px 7px; }
+    summary:after { color: var(--gold); }
+    .cta { background: var(--navy); }
+    .cta .eyebrow { color: var(--gold-soft); }
+    .cta .btn { background: #fff; color: var(--navy); border-radius: 5px; }
+    .cta .btn:hover { background: var(--gold-soft); }
+    footer { background: var(--navy); color: #AEBED5; }
+    footer a { color: #F4C45A; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="topline">
+    <div class="wrap topline-inner">
+      <span>Georgia-registered · Serving Atlanta small businesses</span>
+      <a href="mailto:contact@medhaaccounting.com">contact@medhaaccounting.com</a>
+    </div>
+  </div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="https://medhaaccounting.com/" aria-label="Medha Accounting & Analytics home">
+        <strong>Medha Accounting &amp; Analytics</strong>
+        <span>BOOKKEEPING · REPORTING · CLARITY</span>
+      </a>
+      <nav class="navlinks" aria-label="Main navigation">
+        <a href="#process">Our process</a>
+        <a href="#prepare">What you'll need</a>
+        <!--<a class="btn btn-primary" href="https://calendly.com/medhaaccounting">Get started <span aria-hidden="true">↗</span></a>-->
+          <!--<div class="hero-actions">
+            <a class="btn btn-primary" href="https://calendly.com/medhaaccounting">Get Started <span aria-hidden="true">→</span></a>
+              <a></a>href="https://calendly.com/medhaaccounting" target="_blank" rel="noopener" class="btn btn-primary">Schedule a Consultation</a>
+          </div>-->
+      </nav>
+    </div>
+
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">QuickBooks Online setup</div>
+          <h1>A clearer start for your books. <em>A smoother way to work.</em></h1>
+          <p>We set up QuickBooks Online around the way your business operates—so your accounts are organized, your reports are useful, and you know what happens at every step.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://calendly.com/medhaaccounting">Discuss your setup <span aria-hidden="true">→</span></a>
+            <a class="btn btn-outline" href="#process">Explore the process</a>
+          </div>
+          <div class="trustline">
+            <span>Clear scope before work begins</span>
+            <span>Dedicated point of contact</span>
+            <span>Remote-friendly process</span>
+          </div>
+        </div>
+        <aside class="preview" aria-label="QuickBooks setup progress overview">
+          <div class="preview-top"><strong>Your setup, step by step</strong><span class="status">A guided process</span></div>
+          <p class="preview-sub">A simple view of what we'll work through together.</p>
+          <div class="mini-step"><span class="num">01</span><div><b>Understand your business</b><small>Goals, workflow, and accounts</small></div><span class="check">✓</span></div>
+          <div class="mini-step"><span class="num">02</span><div><b>Configure QuickBooks</b><small>Settings and account structure</small></div><span class="check">✓</span></div>
+          <div class="mini-step"><span class="num">03</span><div><b>Review and validate</b><small>Opening balances and connections</small></div><span class="check">✓</span></div>
+          <div class="mini-step"><span class="num">04</span><div><b>Walkthrough and handoff</b><small>Reports, routines, next steps</small></div><span class="check">✓</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-white" id="process">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">How it works</div>
+          <h2>From first conversation to a working QuickBooks file.</h2>
+          <p>Every business is different. We confirm the scope with you first, then move through a structured setup with clear requests, review points, and communication along the way.</p>
+        </div>
+        <div class="process">
+          <article class="process-card">
+            <span class="num">01</span>
+            <div><h3>Discovery and fit</h3>
+              <p>We learn how your business earns revenue, pays expenses, and needs to use its financial information.</p>
+              <ul><li>Discuss your business and bookkeeping goals</li><li>Confirm whether this is a new file or an existing one</li><li>Agree on scope, timing, and responsibilities</li></ul>
+            </div>
+          </article>
+          <article class="process-card">
+            <span class="num">02</span>
+            <div><h3>Collect information</h3>
+              <p>We provide a focused checklist so you know what to gather and how to share it securely.</p>
+              <ul><li>Business and tax-accounting details</li><li>Bank, credit card, and loan account list</li><li>Prior reports or balances, if applicable</li></ul>
+            </div>
+          </article>
+          <article class="process-card">
+            <span class="num">03</span>
+            <div><h3>Build your QuickBooks foundation</h3>
+              <p>We configure the file to reflect your business and the reporting you need.</p>
+              <ul><li>Company settings and fiscal-year details</li><li>Chart of accounts and account structure</li><li>Products/services and sales-tax settings, if applicable</li><li>Bank-feed guidance and user access</li></ul>
+            </div>
+          </article>
+          <article class="process-card">
+            <span class="num">04</span>
+            <div><h3>Opening balances and review</h3>
+              <p>We review the starting point and check that the setup is consistent before routine bookkeeping begins.</p>
+              <ul><li>Enter or review agreed opening balances</li><li>Check connected accounts and key settings</li><li>Flag missing information or items needing your decision</li></ul>
+            </div>
+          </article>
+          <article class="process-card">
+            <span class="num">05</span>
+            <div><h3>Walkthrough and handoff</h3>
+              <p>We explain the essentials so you understand what is in place and what to do next.</p>
+              <ul><li>Review the dashboard and core reports</li><li>Explain document and transaction workflows</li><li>Share recommended next steps and open items</li></ul>
+            </div>
+          </article>
+          <article class="process-card">
+            <span class="num">06</span>
+            <div><h3>Ongoing support (if needed)</h3>
+              <p>If you choose ongoing bookkeeping, we can continue with a consistent monthly routine.</p>
+              <ul><li>Transaction categorization and review</li><li>Bank and credit card reconciliations</li><li>Monthly financial statements and close</li></ul>
+            </div>
+          </article>
+        </div>
+        <div class="note"><span aria-hidden="true">✦</span><div><strong>Good to know:</strong> Setup does not automatically include historical catch-up bookkeeping, tax advice, payroll configuration, or complex inventory/job-costing work. We'll identify any additional needs and confirm the scope before proceeding.</div></div>
+      </div>
+    </section>
+
+    <section class="section" id="prepare">
+      <div class="wrap two-col">
+        <div>
+          <div class="eyebrow">Before we begin</div>
+          <div class="section-head">
+            <h2>What we'll ask you to prepare.</h2>
+            <p>You don't need to have everything perfect. Sharing what you have helps us assess the starting point and identify anything that needs follow-up.</p>
+          </div>
+          <ul class="list-check">
+            <li>Your legal business name, address, entity type, and fiscal year</li>
+            <li>A list of business bank, credit card, loan, and payment-platform accounts</li>
+            <li>Recent statements and the date you want the books to start from</li>
+            <li>Prior balance sheet, profit and loss statement, or trial balance, if available</li>
+            <li>How you invoice customers, collect payments, and pay vendors</li>
+            <li>Any reporting questions or goals you want QuickBooks to help answer</li>
+          </ul>
+        </div>
+        <aside class="panel">
+          <h3>Helpful documents</h3>
+          <p>We'll confirm exactly which items apply to your business after the initial discussion.</p>
+          <div class="doc-row"><span class="doc-icon">01</span><div><b>Business details</b><small>Legal name, entity type, fiscal year, and relevant tax settings.</small></div></div>
+          <div class="doc-row"><span class="doc-icon">02</span><div><b>Account statements</b><small>Recent bank, credit card, and loan statements for agreed opening dates.</small></div></div>
+          <div class="doc-row"><span class="doc-icon">03</span><div><b>Existing bookkeeping records</b><small>Prior reports, a chart of accounts, or export files if you're moving from another system.</small></div></div>
+          <div class="doc-row"><span class="doc-icon">04</span><div><b>Workflow details</b><small>Invoice process, expense tools, payroll provider, and payment platforms.</small></div></div>
+          <div class="note"><span aria-hidden="true">🔒</span><div>Please don't email passwords, full bank login credentials, or other sensitive access details. We'll agree on an appropriate secure access method.</div></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-white">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Timing and communication</div>
+          <h2>Know what to expect—and when.</h2>
+          <p>Our target onboarding turnaround is five business days once the scope is agreed and the required information is available. More complex files or missing records may take longer; we'll keep you informed.</p>
+        </div>
+        <div class="timeline">
+          <div class="time-card"><strong>First: Align on scope</strong><p>We discuss your needs, review the starting point, and confirm the deliverables and fee before work begins.</p></div>
+          <div class="time-card"><strong>During: Build and clarify</strong><p>We configure the file and contact you if a decision, document, or clarification is needed.</p></div>
+          <div class="time-card"><strong>At handoff: Review together</strong><p>We walk through the setup, explain outstanding items, and discuss options for ongoing bookkeeping.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap two-col">
+        <div class="section-head">
+          <div class="eyebrow">What you'll have</div>
+          <h2>A foundation designed for clearer financial visibility.</h2>
+          <p>At the end of the agreed setup, you'll know how the file is organized and how to move forward with your bookkeeping.</p>
+        </div>
+        <ul class="list-check">
+          <li>A QuickBooks Online file configured to the agreed scope</li>
+          <li>An organized chart of accounts appropriate to your business</li>
+          <li>Agreed opening balances entered or reviewed, where included</li>
+          <li>Guidance on connecting accounts and maintaining records</li>
+          <li>A walkthrough of key reports, including profit and loss and balance sheet</li>
+          <li>A clear list of any exclusions, open questions, or recommended next steps</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-white">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Common questions</div>
+          <h2>Quick answers before we start.</h2>
+        </div>
+        <div class="faq">
+          <details><summary>Do I need to have QuickBooks already?</summary><p>No. We can help with a new QuickBooks Online company file or discuss an existing file that needs setup adjustments or cleanup.</p></details>
+          <details><summary>Is QuickBooks Online subscription pricing included?</summary><p>QuickBooks subscription fees are separate unless your engagement specifically states otherwise. We'll clarify the account and subscription arrangements before setup begins.</p></details>
+          <details><summary>Will you move my old transactions into QuickBooks?</summary><p>Historical migration or catch-up work depends on the records, date range, and complexity. We'll assess it separately and confirm what is included before starting.</p></details>
+          <details><summary>Do you need my bank password?</summary><p>Please don't send passwords by email. We'll discuss the appropriate way to grant access or connect accounts, using the available secure options.</p></details>
+          <details><summary>What happens after setup?</summary><p>You can manage the books yourself using the walkthrough and agreed process, or discuss monthly bookkeeping support, reconciliations, and reporting with Medha Accounting &amp; Analytics.</p></details>
+          <details><summary>How much does setup cost?</summary><p>QuickBooks new company setup starts at $495. Final pricing is confirmed after we understand your accounts, reporting needs, and whether migration or cleanup is required.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="get-started">
+      <div class="wrap cta-inner">
+        <div>
+          <div class="eyebrow">Let's get started</div>
+          <h2>Ready to set up QuickBooks with confidence?</h2>
+          <p>Tell us a little about your business and where you are in the process. We'll follow up to understand your needs and outline the next steps.</p>
+        </div>
+        <a class="btn" href="https://calendly.com/medhaaccounting" >Request a consultation <span aria-hidden="true">↗</span></a>
+         <!--<a href="https://calendly.com/medhaaccounting" target="_blank" rel="noopener" class="btn btn-primary"></a>-->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <a href="/privacy-policy.html">Privacy Policy</a>
+    
+    <a href="/terms-of-service.html">Terms of Service</a>
+    <br>
+      <span>© <span id="year">2026</span> Medha Accounting &amp; Analytics · Atlanta, GA</span>
+      <span><a href="https://medhaaccounting.com/">medhaaccounting.com</a> · <a href="tel:+14047794589">(404) 779-4589</a></span>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  
+
+</body>
+</html>

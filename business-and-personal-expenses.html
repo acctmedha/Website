@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Updated 09302026 with TrustSite tag-->
+   <script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6G3S1ML7EF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-6G3S1ML7EF');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Stop Mixing Business & Personal Expenses | Medha Accounting & Analytics</title>
+
+  <meta
+    name="description"
+    content="Learn why keeping business and personal expenses separate can make bookkeeping, expense tracking, and tax preparation easier for small business owners."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+
+    :root{
+      --navy:#102A56;
+      --navy-2:#173B73;
+      --blue:#2E5DB8;
+      --gold:#D99A17;
+      --gold-soft:#F4C45A;
+      --ink:#172235;
+      --muted:#617087;
+      --paper:#F7F9FC;
+      --paper-2:#EEF3F9;
+      --white:#FFFFFF;
+      --line:#DCE4EF;
+      --line-dark:rgba(255,255,255,.15);
+      --success:#2F7A61;
+      --shadow:0 22px 55px rgba(16,42,86,.12);
+      --max:1180px;
+    }
+
+    *{
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+      scroll-padding-top:86px;
+    }
+
+    body{
+      margin:0;
+      background:var(--paper);
+      color:var(--ink);
+      font-family:'DM Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+      line-height:1.6;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    body.menu-open{
+      overflow:hidden;
+    }
+
+    h1,h2,h3,h4{
+      margin:0;
+      color:var(--navy);
+      font-family:'DM Serif Display',Georgia,serif;
+      font-weight:400;
+      line-height:1.08;
+    }
+
+    p{
+      margin:0 0 1em;
+      color:var(--muted);
+    }
+
+    a{
+      color:inherit;
+    }
+
+    button,input,select,textarea{
+      font:inherit;
+    }
+
+    .mono{
+      font-family:'IBM Plex Mono',monospace;
+    }
+
+    .wrap{
+      width:min(var(--max),calc(100% - 48px));
+      margin:0 auto;
+    }
+
+
+    /* =========================================================
+       HEADER — SAME STYLE AS MAIN PAGE
+       ========================================================= */
+
+    header{
+      position:sticky;
+      top:0;
+      z-index:100;
+      background:rgba(247,249,252,.94);
+      backdrop-filter:blur(14px);
+      border-bottom:1px solid var(--line);
+    }
+
+    nav.wrap{
+      min-height:76px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:30px;
+    }
+
+    .logo{
+      display:flex;
+      align-items:center;
+      gap:11px;
+      color:var(--navy);
+      text-decoration:none;
+      white-space:nowrap;
+    }
+
+    .logo-mark{
+      width:34px;
+      height:34px;
+      border-radius:9px;
+      display:grid;
+      place-items:center;
+      background:var(--navy);
+      color:var(--gold-soft);
+      font-family:'DM Serif Display',serif;
+      font-size:19px;
+      box-shadow:0 7px 18px rgba(16,42,86,.18);
+    }
+
+    .logo-name{
+      font-family:'DM Serif Display',Georgia,serif;
+      font-size:20px;
+      line-height:1;
+    }
+
+    .logo-name span{
+      display:block;
+      margin-top:4px;
+      color:var(--muted);
+      font-family:'IBM Plex Mono',monospace;
+      font-size:8.5px;
+      font-weight:600;
+      letter-spacing:.15em;
+      text-transform:uppercase;
+    }
+
+    .nav-links{
+      display:flex;
+      align-items:center;
+      gap:30px;
+    }
+
+    .nav-links a{
+      position:relative;
+      color:var(--ink);
+      text-decoration:none;
+      font-size:14px;
+      font-weight:600;
+      padding:8px 0;
+    }
+
+    .nav-links a::after{
+      content:"";
+      position:absolute;
+      left:0;
+      right:100%;
+      bottom:2px;
+      height:2px;
+      background:var(--gold);
+      transition:right .2s ease;
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a:focus-visible::after,
+    .nav-links a.active::after{
+      right:0;
+    }
+
+    .nav-cta{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .burger{
+      display:none;
+      border:0;
+      background:none;
+      cursor:pointer;
+      padding:8px;
+    }
+
+    .burger span{
+      display:block;
+      width:23px;
+      height:2px;
+      margin:5px 0;
+      background:var(--navy);
+      transition:.2s ease;
+    }
+
+
+    /* =========================================================
+       BUTTONS — SAME AS MAIN PAGE
+       ========================================================= */
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      min-height:48px;
+      padding:12px 21px;
+      border-radius:5px;
+      border:1px solid transparent;
+      text-decoration:none;
+      cursor:pointer;
+      font-family:'IBM Plex Mono',monospace;
+      font-size:12.5px;
+      font-weight:600;
+      letter-spacing:.025em;
+      transition:
+        transform .18s ease,
+        background .18s ease,
+        color .18s ease,
+        border-color .18s ease,
+        box-shadow .18s ease;
+    }
+
+    .btn:hover{
+      transform:translateY(-1px);
+    }
+
+    .btn-primary{
+      background:var(--navy);
+      color:#fff;
+      box-shadow:0 9px 22px rgba(16,42,86,.16);
+    }
+
+    .btn-primary:hover{
+      background:var(--blue);
+      box-shadow:0 12px 26px rgba(16,42,86,.2);
+    }
+
+    .btn-ghost{
+      background:#fff;
+      border-color:#B8C6D9;
+      color:var(--navy);
+    }
+
+    .btn-ghost:hover{
+      border-color:var(--navy);
+      background:var(--paper-2);
+    }
+
+
+    /* =========================================================
+       BLOG ARTICLE HERO
+       ========================================================= */
+
+    .article-hero{
+      padding:76px 0 62px;
+      background:
+        radial-gradient(
+          circle at 78% 20%,
+          rgba(46,93,184,.08),
+          transparent 28%
+        ),
+        linear-gradient(
+          180deg,
+          #F7F9FC 0%,
+          #F2F6FB 100%
+        );
+      border-bottom:1px solid var(--line);
+    }
+
+    .article-header{
+      max-width:900px;
+      margin:0 auto;
+      text-align:center;
+    }
+
+    .eyebrow{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      margin-bottom:18px;
+      color:var(--gold);
+      font-family:'IBM Plex Mono',monospace;
+      font-size:11px;
+      font-weight:600;
+      letter-spacing:.14em;
+      line-height:1.4;
+      text-transform:uppercase;
+    }
+
+    .eyebrow::before,
+    .eyebrow::after{
+      content:"";
+      width:24px;
+      height:1px;
+      background:currentColor;
+    }
+
+    .article-header h1{
+      font-size:clamp(43px,6vw,68px);
+      letter-spacing:-.025em;
+    }
+
+    .article-subtitle{
+      max-width:700px;
+      margin:22px auto 0;
+      color:var(--navy);
+      font-size:19px;
+      font-weight:600;
+      line-height:1.55;
+    }
+
+    .article-meta{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:10px 18px;
+      margin-top:22px;
+      color:#7A8798;
+      font-family:'IBM Plex Mono',monospace;
+      font-size:10px;
+      letter-spacing:.05em;
+      text-transform:uppercase;
+    }
+
+    .article-meta .category{
+      color:var(--gold);
+      font-weight:600;
+    }
+
+
+    /* =========================================================
+       ARTICLE CONTENT
+       ========================================================= */
+
+    .article-section{
+      padding:72px 0 92px;
+    }
+
+    .article-layout{
+      display:grid;
+      grid-template-columns:minmax(0,820px) 280px;
+      gap:58px;
+      align-items:start;
+      justify-content:center;
+    }
+
+    .article{
+      min-width:0;
+    }
+
+    .article-featured-image{
+      width:100%;
+      display:block;
+      margin:0 0 42px;
+      border-radius:10px;
+      box-shadow:var(--shadow);
+      border:1px solid var(--line);
+    }
+
+    .article-body{
+      max-width:790px;
+    }
+
+    .article-body p{
+      margin:0 0 22px;
+      color:#53647A;
+      font-size:16px;
+      line-height:1.85;
+    }
+
+    .article-body p.lead{
+      color:var(--navy);
+      font-size:20px;
+      font-weight:500;
+      line-height:1.7;
+    }
+
+    .article-body h2{
+      margin:40px 0 15px;
+      font-size:32px;
+    }
+
+    .article-body ul{
+      margin:20px 0 27px;
+      padding:0;
+      list-style:none;
+    }
+
+    .article-body li{
+      position:relative;
+      margin:13px 0;
+      padding-left:31px;
+      color:#53647A;
+      font-size:15px;
+      line-height:1.7;
+    }
+
+    .article-body li::before{
+      position:absolute;
+      left:0;
+      top:0;
+      color:var(--gold);
+      font-size:18px;
+    }
+
+    .article-body li:nth-child(1)::before{
+      content:"🏦";
+    }
+
+    .article-body li:nth-child(2)::before{
+      content:"🧾";
+    }
+
+    .article-body li:nth-child(3)::before{
+      content:"📊";
+    }
+
+    .article-body li:nth-child(4)::before{
+      content:"🔐";
+    }
+
+    .article-callout{
+      margin:34px 0;
+      padding:25px 28px;
+      border-left:4px solid var(--gold);
+      border-radius:0 7px 7px 0;
+      background:var(--paper-2);
+    }
+
+    .article-callout p{
+      margin:0;
+      color:var(--navy);
+      font-size:17px;
+      font-weight:600;
+      line-height:1.65;
+    }
+
+    .article-cta{
+      margin-top:40px;
+      padding:32px;
+      border-radius:9px;
+      background:var(--navy);
+      box-shadow:var(--shadow);
+    }
+
+    .article-cta h2{
+      margin:0 0 10px;
+      color:#fff;
+      font-size:29px;
+    }
+
+    .article-cta p{
+      margin:0 0 21px;
+      color:#B8C8DE;
+      font-size:13.5px;
+      line-height:1.7;
+    }
+
+    .article-tags{
+      display:flex;
+      flex-wrap:wrap;
+      gap:7px;
+      margin-top:38px;
+      padding-top:25px;
+      border-top:1px solid var(--line);
+    }
+
+    .tag{
+      padding:6px 9px;
+      border-radius:4px;
+      background:var(--paper-2);
+      color:#64748A;
+      font-family:'IBM Plex Mono',monospace;
+      font-size:9px;
+      letter-spacing:.03em;
+    }
+
+
+    /* =========================================================
+       SIDEBAR
+       ========================================================= */
+
+    .article-sidebar{
+      position:sticky;
+      top:105px;
+    }
+
+    .sidebar-card{
+      margin-bottom:18px;
+      padding:25px;
+      border:1px solid var(--line);
+      border-radius:9px;
+      background:#fff;
+    }
+
+    .sidebar-card .eyebrow{
+      justify-content:flex-start;
+      margin-bottom:13px;
+    }
+
+    .sidebar-card .eyebrow::after{
+      display:none;
+    }
+
+    .sidebar-card h3{
+      margin-bottom:10px;
+      font-size:22px;
+    }
+
+    .sidebar-card p{
+      margin-bottom:17px;
+      font-size:12.5px;
+      line-height:1.65;
+    }
+
+    .sidebar-link{
+      display:block;
+      margin-top:13px;
+      color:var(--blue);
+      font-family:'IBM Plex Mono',monospace;
+      font-size:10.5px;
+      font-weight:600;
+      text-decoration:none;
+      text-transform:uppercase;
+    }
+
+    .sidebar-link:hover{
+      color:var(--navy);
+    }
+
+
+    /* =========================================================
+       FOOTER — SAME AS MAIN PAGE
+       ========================================================= */
+
+    footer{
+      padding:58px 0 27px;
+      background:var(--navy);
+      color:#AEBED5;
+    }
+
+    .footer-grid{
+      display:grid;
+      grid-template-columns:1.5fr 1fr 1fr 1fr;
+      gap:45px;
+      padding-bottom:42px;
+    }
+
+    .footer-logo{
+      color:#fff;
+      font-family:'DM Serif Display',serif;
+      font-size:21px;
+    }
+
+    .footer-tagline{
+      max-width:300px;
+      margin-top:11px;
+      color:#8FA3C0;
+      font-size:12.5px;
+    }
+
+    .footer-grid h5{
+      margin:0 0 15px;
+      color:#F6CA64;
+      font-family:'IBM Plex Mono',monospace;
+      font-size:9.5px;
+      font-weight:600;
+      letter-spacing:.1em;
+      text-transform:uppercase;
+    }
+
+    .footer-grid a{
+      display:block;
+      width:max-content;
+      max-width:100%;
+      margin:9px 0;
+      color:#B8C8DE;
+      text-decoration:none;
+      font-size:12.5px;
+    }
+
+    .footer-grid a:hover{
+      color:#fff;
+    }
+
+    .footer-bottom{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+      padding-top:22px;
+      border-top:1px solid var(--line-dark);
+      color:#8296B4;
+      font-size:10.5px;
+    }
+
+
+    /* =========================================================
+       RESPONSIVE
+       ========================================================= */
+
+    @media (max-width:1000px){
+
+      .article-layout{
+        grid-template-columns:1fr;
+      }
+
+      .article-sidebar{
+        position:static;
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:18px;
+      }
+
+      .article-sidebar .sidebar-card{
+        margin-bottom:0;
+      }
+
+      .footer-grid{
+        grid-template-columns:1.5fr 1fr 1fr;
+      }
+
+    }
+
+
+    @media (max-width:760px){
+
+      .wrap{
+        width:min(var(--max),calc(100% - 36px));
+      }
+
+      .nav-links,
+      .nav-cta > .btn{
+        display:none;
+      }
+
+      .burger{
+        display:block;
+      }
+
+      .article-hero{
+        padding:56px 0 48px;
+      }
+
+      .article-header h1{
+        font-size:clamp(40px,11vw,56px);
+      }
+
+      .article-subtitle{
+        font-size:17px;
+      }
+
+      .article-section{
+        padding:52px 0 70px;
+      }
+
+      .article-layout{
+        gap:38px;
+      }
+
+      .article-sidebar{
+        grid-template-columns:1fr;
+      }
+
+      .article-body p{
+        font-size:15px;
+      }
+
+      .article-body p.lead{
+        font-size:18px;
+      }
+
+      .article-cta{
+        padding:26px;
+      }
+
+      .footer-grid{
+        grid-template-columns:1fr 1fr;
+      }
+
+      .footer-bottom{
+        align-items:flex-start;
+        flex-direction:column;
+      }
+
+    }
+
+
+    @media (max-width:520px){
+
+      .wrap{
+        width:min(var(--max),calc(100% - 30px));
+      }
+
+      .logo-name{
+        font-size:17px;
+      }
+
+      .logo-name span{
+        font-size:7.5px;
+      }
+
+      .logo-mark{
+        width:31px;
+        height:31px;
+      }
+
+      .article-header h1{
+        font-size:42px;
+      }
+
+      .article-featured-image{
+        border-radius:7px;
+        margin-bottom:30px;
+      }
+
+      .article-body h2{
+        font-size:28px;
+      }
+
+      .article-callout{
+        padding:21px;
+      }
+
+      .footer-grid{
+        grid-template-columns:1fr;
+      }
+
+    }
+
+
+    /* =========================================================
+       MOBILE NAV
+       ========================================================= */
+
+    @media (max-width:760px){
+
+      .nav-links.mobile-open{
+        display:flex;
+        position:absolute;
+        top:76px;
+        left:0;
+        right:0;
+        flex-direction:column;
+        align-items:flex-start;
+        gap:0;
+        padding:14px 18px 18px;
+        background:rgba(247,249,252,.98);
+        border-bottom:1px solid var(--line);
+        box-shadow:0 18px 30px rgba(16,42,86,.08);
+      }
+
+      .nav-links.mobile-open a{
+        width:100%;
+        padding:13px 0;
+        border-bottom:1px solid var(--line);
+      }
+
+      .nav-links.mobile-open a:last-child{
+        border-bottom:0;
+      }
+
+      .nav-links.mobile-open a::after{
+        display:none;
+      }
+
+    }
+
+  </style>
+  <!--SEO-->
+  <script type="application/ld+json">
+      {
+      "@context":"https://schema.org",
+      "@type":"Article",
+      "headline":"Stop Mixing Business and Personal Expenses",
+      "author":{
+        "@type":"Organization",
+        "name":"Medha Accounting & Analytics"
+      },
+      "publisher":{
+        "@type":"Organization",
+        "name":"Medha Accounting & Analytics"
+      },
+      "datePublished":"2026-09-25",
+      "mainEntityOfPage":"https://medhaaccounting.com/blog/business-and-personal-expenses.html"
+      }
+<!--SEO-->
+</script>
+</head>
+
+
+<body>
+
+
+  <!-- =========================================================
+       HEADER
+       ========================================================= -->
+
+  <header>
+
+    <nav class="wrap" aria-label="Primary navigation">
+<a id='COCBadgeURL' href='https://www.chamberofcommerce.com/business-directory/georgia/atlanta/bookkeeping-service/2034529506-medha-accounting-and-analytics?source=memberwebsite' target='_tab'><img style='width:auto;height:80px;' id='COCBadgeIMG' src='https://coc.codes/images/badge/2034529506'></a>
+      <!--<a href="../index.html#top" class="logo">
+
+        <span class="logo-mark" aria-hidden="true">
+          M
+        </span>
+
+        <span class="logo-name">
+          Medha Accounting &amp; Analytics
+
+          <span>
+            Bookkeeping · Reporting · Clarity
+          </span>
+
+        </span>
+
+      </a>-->
+
+              <a href="/" class="logo">
+          <img src="logo_yelp.png"
+              alt="Medha Accounting & Analytics"
+              width="125">
+
+          <span class="logo-name">
+              Medha Accounting and Analytics
+              <span>Bookkeeping · Reporting · Clarity</span>
+          </span>
+</a>
+
+
+      <div class="nav-links" id="navLinks">
+
+        <a href="../index.html#services">
+          Services
+        </a>
+
+        <a href="../index.html#pricing">
+          Pricing
+        </a>
+
+        <a href="../index.html#why">
+          Why Medha
+        </a>
+
+        <a href="../blog.html" class="active">
+          Blog
+        </a>
+
+        <a href="../index.html#faq">
+          FAQ
+        </a>
+
+      </div>
+
+
+      <div class="nav-cta">
+
+        <a
+          href="https://calendly.com/medhaaccounting"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-primary"
+        >
+          Schedule a Consultation
+        </a>
+
+
+        <button
+          class="burger"
+          id="menuButton"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+
+  <!-- =========================================================
+       ARTICLE HERO
+       ========================================================= -->
+
+  <section class="article-hero">
+
+    <div class="wrap">
+
+      <div class="article-header">
+
+        <div class="eyebrow">
+          Bookkeeping Tips
+        </div>
+
+
+        <h1>
+          Stop Mixing Business &amp; Personal Expenses
+        </h1>
+
+
+        <p class="article-subtitle">
+          Running a business is already complicated.
+          Your bank account shouldn’t make it harder.
+        </p>
+
+
+        <div class="article-meta">
+
+          <span class="category">
+            Small Business Finance
+          </span>
+
+          <span>
+            September 25, 2026
+          </span>
+
+          <span>
+            5 min read
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================================================
+       ARTICLE
+       ========================================================= -->
+
+  <main>
+
+    <section class="article-section">
+
+      <div class="wrap article-layout">
+
+
+        <!-- ================= ARTICLE ================= -->
+
+        <article class="article">
+
+          <img
+            src="../images/Biz_Pers_Separate_pic_gemini.jpg"
+            alt="Business and personal banking accounts kept separate"
+            class="article-featured-image"
+          >
+
+
+          <div class="article-body">
+
+            <p class="lead">
+              Keeping your business and personal finances separate can make
+              your financial life much easier to manage — especially as your
+              business grows.
+            </p>
+
+
+            <p>
+              When business and personal purchases are all flowing through
+              the same account, it can become difficult to determine what
+              belongs to the business and what doesn't.
+            </p>
+
+
+            <p>
+              That creates additional work when you're reviewing transactions,
+              reconciling your accounts, preparing financial reports, or getting
+              your books ready for tax preparation.
+            </p>
+
+
+            <h2>
+              Why separate accounts matter
+            </h2>
+
+
+            <p>
+              Using separate business and personal accounts creates a clearer
+              financial trail. It gives you a dedicated place for business
+              income and expenses and makes it easier to see how your business
+              is actually performing.
+            </p>
+
+
+            <ul>
+
+              <li>
+                Keep business transactions organized
+              </li>
+
+              <li>
+                Make tax preparation easier
+              </li>
+
+              <li>
+                Simplify bookkeeping and expense tracking
+              </li>
+
+              <li>
+                Maintain a clearer separation between business and personal finances
+              </li>
+
+            </ul>
+
+
+            <h2>
+              What happens when everything is mixed together?
+            </h2>
+
+
+            <p>
+              When personal purchases and business transactions appear together,
+              every transaction may require an additional decision:
+              <em>Is this business or personal?</em>
+            </p>
+
+
+            <p>
+              Over time, those individual decisions can add up to a significant
+              bookkeeping burden. It can also make it harder to get a clean,
+              timely picture of your business finances.
+            </p>
+
+
+            <div class="article-callout">
+
+              <p>
+                💡 Business money belongs in a business account.
+                Personal money belongs in a personal account.
+              </p>
+
+            </div>
+
+
+            <h2>
+              A simple habit that can make bookkeeping easier
+            </h2>
+
+
+            <p>
+              Start by maintaining a dedicated business checking account and,
+              when appropriate, a dedicated business credit card. Use those
+              accounts for business income and business expenses.
+            </p>
+
+
+            <p>
+              Then keep personal spending on your personal accounts.
+              If you need to put money into or take money out of the business,
+              make sure those transactions are recorded appropriately in your
+              bookkeeping system.
+            </p>
+
+
+            <p>
+              The goal isn't to make your finances more complicated.
+              It's the opposite: create a system that makes the financial
+              activity of your business easier to understand.
+            </p>
+
+
+            <!-- ================= CTA ================= -->
+
+            <div class="article-cta">
+
+              <h2>
+                Ready to clean up your business finances?
+              </h2>
+
+              <p>
+                Let's get your books organized and make your financial
+                information easier to understand. Medha Accounting &amp;
+                Analytics provides bookkeeping, reconciliations, QuickBooks
+                support, payroll support, and financial reporting for
+                small service-based businesses.
+              </p>
+
+              <a
+                href="https://calendly.com/medhaaccounting"
+                target="_blank"
+                rel="noopener"
+                class="btn"
+                style="background:#fff;color:#102A56;"
+              >
+                Schedule a Free Consultation
+              </a>
+
+            </div>
+
+
+            <!-- ================= TAGS ================= -->
+
+            <div class="article-tags">
+
+              <span class="tag">#SmallBusiness</span>
+              <span class="tag">#SmallBusinessOwner</span>
+              <span class="tag">#Bookkeeping</span>
+              <span class="tag">#BusinessFinance</span>
+              <span class="tag">#TaxPreparation</span>
+              <span class="tag">#TaxSeason</span>
+              <span class="tag">#Entrepreneur</span>
+              <span class="tag">#BusinessTips</span>
+              <span class="tag">#FinancialOrganization</span>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="article-sidebar">
+
+
+          <div class="sidebar-card">
+
+            <div class="eyebrow">
+              Medha Insights
+            </div>
+
+            <h3>
+              Practical financial tips for small businesses.
+            </h3>
+
+            <p>
+              Bookkeeping, QuickBooks, financial reporting, organization,
+              and other practical topics for business owners.
+            </p>
+
+            <a
+              href="../blog.html"
+              class="sidebar-link"
+            >
+              ← Back to Blog
+            </a>
+
+          </div>
+
+
+          <div class="sidebar-card">
+
+            <div class="eyebrow">
+              Need Help?
+            </div>
+
+            <h3>
+              Let's get your books organized.
+            </h3>
+
+            <p>
+              Need help separating accounts, cleaning up your books,
+              or keeping your monthly bookkeeping current?
+            </p>
+
+            <a
+              href="https://calendly.com/medhaaccounting"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-primary"
+            >
+              Book a Consultation
+            </a>
+
+          </div>
+
+
+        </aside>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =========================================================
+       FOOTER — SAME AS INDEX
+       ========================================================= -->
+
+  <footer>
+
+    <div class="wrap">
+
+      <div class="footer-grid">
+
+
+        <div>
+
+          <div class="footer-logo">
+            Medha Accounting &amp; Analytics
+          </div>
+
+          <p class="footer-tagline">
+            Professional bookkeeping and financial reporting
+            for small service-based businesses.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h5>
+            Services
+          </h5>
+
+          <a href="../index.html#services">
+            Bookkeeping
+          </a>
+
+          <a href="../index.html#services">
+            QuickBooks Setup
+          </a>
+
+          <a href="../index.html#services">
+            Reconciliation
+          </a>
+
+          <a href="../index.html#services">
+            Reporting &amp; Analytics
+          </a>
+
+        </div>
+
+
+        <div>
+
+          <h5>
+            Company
+          </h5>
+
+          <a href="../index.html#why">
+            Why Medha
+          </a>
+
+          <a href="../index.html#pricing">
+            Pricing
+          </a>
+
+          <a href="../blog.html">
+            Blog
+          </a>
+
+          <a href="../index.html#faq">
+            FAQ
+          </a>
+
+          <a
+            href="https://calendly.com/medhaaccounting"
+            target="_blank"
+            rel="noopener"
+          >
+            Book a Call
+          </a>
+
+          
+            <a href="/privacy-policy.html">Privacy Policy</a>
+    
+    <a href="/terms-of-service.html">Terms of Service</a>
+    <br>
+         
+          </a>
+
+        </div>
+
+
+        <div>
+
+          <h5>
+            Contact
+          </h5>
+
+          <a href="mailto:contact@medhaaccounting.com">
+            contact@medhaaccounting.com
+          </a>
+
+          <a href="tel:+14047794589">
+            (404) 779-4589
+          </a>
+
+          <a href="../index.html#book">
+            Atlanta, GA
+          </a>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <span>
+          © <span id="year"></span>
+          Medha Accounting &amp; Analytics.
+          All rights reserved.
+        </span>
+
+        <span>
+          Georgia-Registered · Bookkeeping &amp; Financial Analytics Services
+        </span>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- =========================================================
+       JAVASCRIPT
+       ========================================================= -->
+
+  <script>
+
+    /* Current year */
+
+    document.getElementById('year').textContent =
+      new Date().getFullYear();
+
+
+    /* Mobile navigation */
+
+    var menuButton =
+      document.getElementById('menuButton');
+
+    var navLinks =
+      document.getElementById('navLinks');
+
+
+    menuButton.addEventListener('click', function(){
+
+      var open =
+        navLinks.classList.toggle('mobile-open');
+
+      menuButton.setAttribute(
+        'aria-expanded',
+        open ? 'true' : 'false'
+      );
+
+      menuButton.setAttribute(
+        'aria-label',
+        open ? 'Close menu' : 'Open menu'
+      );
+
+      document.body.classList.toggle(
+        'menu-open',
+        open
+      );
+
+    });
+
+
+    navLinks.querySelectorAll('a').forEach(function(link){
+
+      link.addEventListener('click', function(){
+
+        navLinks.classList.remove(
+          'mobile-open'
+        );
+
+        menuButton.setAttribute(
+          'aria-expanded',
+          'false'
+        );
+
+        menuButton.setAttribute(
+          'aria-label',
+          'Open menu'
+        );
+
+        document.body.classList.remove(
+          'menu-open'
+        );
+
+      });
+
+    });
+
+  </script>
+ 
+</body>
+</html>
